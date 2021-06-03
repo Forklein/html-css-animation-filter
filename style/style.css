@@ -79,7 +79,26 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    animation: effect 2;
+    transition: filter 2s, border-radius 2s, width 2s, margin 2s;
 }
+
+@keyframes effect{
+    from{
+        margin: 0;
+    }
+    to{
+        margin: 30px;
+    }
+}
+
+.ex-9-img:hover{
+    filter: sepia(0.9);
+    border-radius: 15px;
+    width: 600px;
+    margin: 0;
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
