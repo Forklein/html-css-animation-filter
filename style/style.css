@@ -182,3 +182,38 @@
         right: 10%;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: move_3 2s linear;
+}
+
+@keyframes move_3 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        left: 100%;
+    }
+    100%{
+        top: 100%
+        left: 100%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: move_4 2s linear;
+}
+
+@keyframes move_4 {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 60%;
+    }
+    100%{
+        left: 10%;
+    }
+}
