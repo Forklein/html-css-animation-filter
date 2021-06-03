@@ -79,17 +79,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    animation: effect 2;
-    transition: filter 2s, border-radius 2s, width 2s, margin 2s;
-}
-
-@keyframes effect{
-    from{
-        margin: 0;
-    }
-    to{
-        margin: 30px;
-    }
+    transition: 2s;
 }
 
 .ex-9-img:hover{
@@ -101,7 +91,15 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotating 1s linear infinite;
 }
+
+@keyframes rotating {
+    from{
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
